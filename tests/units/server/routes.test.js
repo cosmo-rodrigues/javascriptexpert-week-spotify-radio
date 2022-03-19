@@ -3,7 +3,7 @@ import { jest, expect, describe, test, beforeEach } from '@jest/globals';
 import { config } from '../../../server/config/index.js';
 import { Controller } from '../../../server/controller/index.js';
 import { handler } from '../../../server/routes/routes.js';
-import { TestUtil } from '../../utils/index.js';
+import { TestUtil } from '../utils/index.js';
 
 const {
   pages,
