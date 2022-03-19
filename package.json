@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "nodemon server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand",
+    "test:watch": "set NODE_OPTIONS=--experimental-vm-modules && npx jest jest --no-cache --watchAll",
+    "test:coverage": "set NODE_OPTIONS=--experimental-vm-modules && npx jest jest --force-exit --no-cache --coverage tests/unit"
   },
   "repository": {
     "type": "git",
