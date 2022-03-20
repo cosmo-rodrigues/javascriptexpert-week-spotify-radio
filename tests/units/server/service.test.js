@@ -34,9 +34,9 @@ describe('#Service - test suite for API service', () => {
     expect(serviceReturn).toStrictEqual(mockFileStream);
   });
   test('getFileInfo - should return file info', async () => {
-    const file = '/index.html';
+    const file = 'index.html';
     const expectedType = '.html';
-    const expectedFullFilePath = publicDirectory + file;
+    const expectedFullFilePath = `${publicDirectory}\\${file}`;
 
     jest.spyOn(fsPromises, fsPromises.access.name).mockResolvedValue(null);
 
