@@ -6,7 +6,7 @@ sox \
   --i \
   "audio/fx/Boo! Sound Effect (128 kbps).mp3"
 
-// converter para o mesmo Bitrate
+// converter para o mesmo bitrate
 sox \
   -v 0.99 \
   -t mp3 \
@@ -15,7 +15,7 @@ sox \
   -t mp3 \
   "output.mp3"
 
-// obter o Bitrate 
+// obter o bitrate 
 sox \
   --i \
   -B \
@@ -33,4 +33,4 @@ sox \
   -t mp3 \
   "output.mp3"
 
-// obter o Bitrate 
+// obter o bitrate 

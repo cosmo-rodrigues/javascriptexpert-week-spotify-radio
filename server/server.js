@@ -1,5 +1,8 @@
-import { createServer } from 'http';
+import {
+  createServer
+} from 'http'
+import {
+  handler
+} from './routes.js'
 
-import { handler } from './routes/routes.js';
-
-export default createServer(handler);
+export default createServer(handler)

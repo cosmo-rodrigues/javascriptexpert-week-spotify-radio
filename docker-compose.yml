@@ -1,11 +1,11 @@
 version: '2.1'
-services:
+services: 
   live-reload:
     image: spotify-radio
     build: .
     environment:
       PORT: 3000
-    command:
+    command: 
       - npm
       - run
       - live-reload
@@ -18,7 +18,7 @@ services:
   test:
     image: spotify-radio
     build: .
-    command:
+    command: 
       - npm
       - run
       - test
@@ -29,7 +29,7 @@ services:
   test-watch:
     image: spotify-radio
     build: .
-    command:
+    command: 
       - npm
       - run
       - test:watch
@@ -40,7 +40,7 @@ services:
   test-coverage:
     image: spotify-radio
     build: .
-    command:
+    command: 
       - npm
       - run
       - test:coverage
@@ -50,3 +50,4 @@ services:
 
 volumes:
   node_modules: {}
+    
